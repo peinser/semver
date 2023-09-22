@@ -14,9 +14,9 @@ It can be combined with `git` pre-commit hooks to guarantee correct versioning.
 
 [semver]: https://github.com/mojombo/semver
 
-[![Unit Tests and Linters](https://github.com/fsaintjacques/semver-tool/actions/workflows/ci.yaml/badge.svg)](https://github.com/fsaintjacques/semver-tool/actions/workflows/ci.yaml)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/fsaintjacques/semver-tool)](https://github.com/fsaintjacques/semver-tool/releases/latest)
-[![License](https://shields.io/badge/license-Apache%202-blue)](https://github.com/fsaintjacques/semver-tool/blob/master/LICENSE)
+[![Unit Tests and Linters](https://github.com/peinser/semver/actions/workflows/ci.yaml/badge.svg)](https://github.com/peinser/semver/actions/workflows/ci.yaml)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/peinser/semver)](https://github.com/peinser/semver/releases/latest)
+[![License](https://shields.io/badge/license-Apache%202-blue)](https://github.com/peinser/semver/blob/master/LICENSE)
 
 installation
 -----
@@ -26,7 +26,7 @@ The semver tool can be downloaded from github and made executable with these com
 ```bash
 # Download the script and save it to /usr/local/bin
 wget -O /usr/local/bin/semver \
-  https://raw.githubusercontent.com/fsaintjacques/semver-tool/master/src/semver
+  https://raw.githubusercontent.com/peinser/semver/master/src/semver
 
 # Make script executable
 chmod +x /usr/local/bin/semver
@@ -214,7 +214,7 @@ however, alternative installation mechanisms might be desired. Two such methods 
 `asdf` is a tool version manager.
 See the [`asdf`](https://asdf-vm.com/) documentation explaining how to set up asdf, install plugins and tools, and how to set/select versions.
 
-The [semver plugin](https://github.com/mathew-fleisch/asdf-semver) handles the installation of the semver-tool. The plugin README file contains an example installation.
+The [semver plugin](https://github.com/mathew-fleisch/asdf-semver) handles the installation of the semver. The plugin README file contains an example installation.
 
 ### bpkg
 
@@ -224,7 +224,7 @@ setting the execution permission and more.
 
 The semver tool can be installed by running:
 ```sh
-bpkg install -g semver-tool
+bpkg install -g semver
 ```
 
 ### git
@@ -313,5 +313,5 @@ provide the batteries and magic?
 
 But there are helpers available.  One of them mentioned above is [`asdf`](https://asdf-vm.com/).
 Plugins for `bats` and `shellcheck` are available meaning that you can use `asdf` to set up your
-`semver-tool` test environment as you wish: the current stable versions, exploratory versions, or
+`semver` test environment as you wish: the current stable versions, exploratory versions, or
 surely one day the next stable versions.
