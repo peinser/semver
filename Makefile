@@ -2,7 +2,7 @@
 #	N.B. 'semver' does not need to be built: it's simply an executable script.
 
 #	The default installation directory (see the 'install' target for more info)
-PREFIX ?= /usr/local
+PREFIX ?= ~/Scripts/
 
 #	The full path name of the source code repository.  Used for "bind mounts" in
 #	Docker
@@ -28,20 +28,20 @@ help:	semver
 	@echo \"make test-local\" runs all tests assuming test tools are locally installed
 	@echo
 	@echo \"make install\" installs \'semver\' to ${DESTDIR}${PREFIX}/bin
-	@echo 
+	@echo
 	@echo See the Makefile and README for even more details
 
 #	"test-stable" relies on well defined and stable test tools.
 #	It is run by GitHub actions.
 #	"test-stable" can be run locally as long as Docker is installed and up.
 #	This might be a good idea before pushing to GitHub or generating a PR.
-test-stable: lint unit-test doc-test 
+test-stable: lint unit-test doc-test
 
 #	"test-local" assumes that the test tools (bats, shellcheck, bash) are installed.
 #	Unlike "test-stable", one is free to install any version of the tools and
 #	by any method: useful for development and exploring new versions. "asdf" might
 #	be the right way to set up your local dev. environment.
-test-local: lint-local unit-test-local doc-test-local 
+test-local: lint-local unit-test-local doc-test-local
 
 
 #	"lint" tests check shell scripts for dubious code
