@@ -15,7 +15,7 @@ It can be combined with `git` pre-commit hooks to guarantee correct versioning.
 [semver]: https://github.com/mojombo/semver
 
 [![Unit Tests and Linters](https://github.com/peinser/semver/actions/workflows/ci.yaml/badge.svg)](https://github.com/peinser/semver/actions/workflows/ci.yaml)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/peinser/semver)](https://github.com/peinser/semver/releases/latest)
+[![Tag](https://img.shields.io/github/v/tag/peinser/semver)](https://github.com/peinser/semver/tags)
 [![License](https://shields.io/badge/license-Apache%202-blue)](https://github.com/peinser/semver/blob/master/LICENSE)
 
 installation
