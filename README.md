@@ -33,7 +33,7 @@ chmod +x /usr/local/bin/semver
 
 # Prove it works
 semver --version
-# semver: 3.4.0
+# semver: 3.4.2+dev
 ```
 
 Most likely, you will want to insure that the directory containing `semver` is on your `PATH`.
@@ -303,15 +303,3 @@ This can all be summarized as:
 2. Run the test suite locally.
 3. Run the test suite using the stable environment.
 4. Let GitHub Actions run the test suite using the stable environment.
-
-### a note about dev environments
-
-It is almost inescapable that developers have to understand and manage their environments, and this
-can be a pain ... even for small projects.  And it is often a source of subtle errors.  If everything
-was "auto-magic", "batteries included"; then who--if not the dev's--is going to do the work to
-provide the batteries and magic?
-
-But there are helpers available.  One of them mentioned above is [`asdf`](https://asdf-vm.com/).
-Plugins for `bats` and `shellcheck` are available meaning that you can use `asdf` to set up your
-`semver` test environment as you wish: the current stable versions, exploratory versions, or
-surely one day the next stable versions.
